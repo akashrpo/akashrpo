@@ -1,30 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Global site tag (gtag.js) - Google Marketing Platform -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=DC-11669336"></script>
+<!-- Global site tag (gtag.js) - Google Ads: 10822205918 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10822205918"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'DC-11669336');
+  gtag('config', 'AW-10822205918');
 </script>
-  <script>
+
+<!-- Event snippet for Buy Chair conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
   gtag('event', 'conversion', {
-    'allow_custom_scripts': true,
-    'send_to': 'DC-11669336/conv01/signu0+standard'
+      'send_to': 'AW-10822205918/FY63COnQrYkDEN6Dt6go',
+      'transaction_id': '',
+      'event_callback': callback
   });
+  return false;
+}
 </script>
-<noscript>
-<img src="https://ad.doubleclick.net/ddm/activity/src=11669336;type=conv01;cat=signu0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
-</noscript>
-</head>
-<body>
-  <h4>Native Integration!</h4>
-</body>
-</html>
